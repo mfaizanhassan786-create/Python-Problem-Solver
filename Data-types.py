@@ -33,3 +33,22 @@
 # print(age)
 # print(height)
 # print("Ok",student)
+
+
+
+# # Program 2 — Display Data Types
+
+# # Statement:
+# # Create one variable of each type: str, int, float, and bool.
+
+# # Use Python's type() function to display the data type of each variable.
+
+# a = 10
+# b = 'hello!'
+# c = True
+# d= 19.22
+
+# print(type(a))
+# print(type(b))
+# print(type(c))
+# print(type(d))
