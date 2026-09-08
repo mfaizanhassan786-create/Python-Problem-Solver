@@ -52,3 +52,38 @@
 # print(type(b))
 # print(type(c))
 # print(type(d))
+# Creating variables with chosen data types
+
+
+# # Program 3 — Student Profile
+
+# # Statement:
+# # Create variables representing a student's:
+
+# # Name
+# # Age
+# # Roll number
+# # Percentage
+# # Student status
+
+# # Choose appropriate data types for each variable.
+
+# # Then print the values and their data types.
+
+# name = input("Enter your name: ")
+# age = input ("Enter your age: ")
+# roll_no = input("Enter your roll number: ")
+# percent = input("Enter your Percentage: ")
+# is_student = input("Student status is Pass or fails: ")
+
+# str(name)
+# int(age)
+# int(roll_no)
+# float(percent)
+# bool(is_student)
+
+# print(name)
+# print(age)
+# print(roll_no)
+# print(percent)
+# print(is_student)
