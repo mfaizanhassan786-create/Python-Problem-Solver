@@ -60,3 +60,24 @@
 #     print("You are eligible for a discount.")
 # else:
 #     print("You are not eligible for a discount.")
+
+
+# # Problem 5 — Login Verification
+
+# # Statement:
+# # Write a program that stores a correct username and password:
+
+
+# # Stored credentials
+# correct_username = "faizan"
+# correct_password = "password123"
+
+# # User inputs
+# entered_username = input("Enter username: ")
+# entered_password = input("Enter password: ")
+
+# # Check credentials
+# if entered_username == correct_username and entered_password == correct_password:
+#     print("Login Successful! Welcome.")
+# else:
+#     print("Invalid username or password.")
