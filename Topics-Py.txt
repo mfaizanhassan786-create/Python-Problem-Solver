@@ -1,0 +1,18 @@
+🐍 Python Step-by-Step Roadmap
+Topics:
+	What we'll practice:
+
+1️⃣	Variables	Creating, changing, storing values
+2️⃣	Input	Taking data from the user
+3️⃣	Data Types	str, int, float, bool
+4️⃣	Operators	Arithmetic, comparison, assignment
+5️⃣	if	Simple conditions
+6️⃣	if-else	Two possible outcomes
+7️⃣	if-elif-else	Multiple conditions
+8️⃣	for loop	Repetition
+9️⃣	while loop	Repetition based on conditions
+🔟	Nested concepts	Combining what you've mastered
+1️⃣1️⃣	Functions	Reusable programs
+1️⃣2️⃣	Lists/Tuples/etc.	Collections
+And 
+→	LeetCode	Problem-solving
