@@ -83,29 +83,29 @@
 #     print("Invalid username or password.")
 
 
-# Problem 2 — ATM Withdrawal
+# # Problem 6 — ATM Withdrawal
 
-# Statement:
-# Create a program with:
+# # Statement:
+# # Create a program with:
+
+# # balance = 50000
+
+# # Ask the user for a withdrawal amount.
+
+# # If the withdrawal amount is less than or equal to the balance, calculate and display the remaining balance.
+# # Otherwise, display:
+# # Insufficient Balance!
+
+# # Initial account balance
 
 # balance = 50000
 
-# Ask the user for a withdrawal amount.
+# # Get withdrawal amount from user (convert input to float or int for math)
+# withdrawal_amount = float(input("Enter withdrawal amount: "))
 
-# If the withdrawal amount is less than or equal to the balance, calculate and display the remaining balance.
-# Otherwise, display:
-# Insufficient Balance!
-
-# Initial account balance
-
-balance = 50000
-
-# Get withdrawal amount from user (convert input to float or int for math)
-withdrawal_amount = float(input("Enter withdrawal amount: "))
-
-# Check if user has enough balance
-if withdrawal_amount <= balance:
-    balance = balance - withdrawal_amount
-    print(f" Withdrawal successful! Remaining balance: ${balance:.2f}")
-else:
-    print(" Insufficient Balance!")
+# # Check if user has enough balance
+# if withdrawal_amount <= balance:
+#     balance = balance - withdrawal_amount
+#     print(f" Withdrawal successful! Remaining balance: ${balance:.2f}")
+# else:
+#     print(" Insufficient Balance!")
