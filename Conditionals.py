@@ -36,9 +36,27 @@
 
 
 
-a = int(input("Enter your Number: "))
+# a = int(input("Enter your Number: "))
 
-if a % 2 == 0:
-    print("This is an even number.")
-else:
-    print("This is an odd number.")
+# if a % 2 == 0:
+#     print("This is an even number.")
+# else:
+#     print("This is an odd number.")
+
+
+# # Problem 4 — Discount Eligibility
+
+# # Statement:
+# # Take the user's shopping amount.
+
+# # If the amount is 10,000 or greater, print:
+
+# # You are eligible for a discount.
+
+
+# a= int(input("Enter your shopping amount: "))
+
+# if a >= 10000:
+#     print("You are eligible for a discount.")
+# else:
+#     print("You are not eligible for a discount.")
