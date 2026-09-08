@@ -96,5 +96,3 @@
 # print("Your obtain Marks:", obtain_marks)
 # print("Your Percentage is", percentage)
 
-
-print("Hello World")
