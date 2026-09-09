@@ -109,3 +109,35 @@ for Loop — 5 Problems
 # for i in range(1, 11):
 #     multiple = n * i
 #     print(f"Multiple {i}: {multiple}")
+
+
+
+# # Problem 7 — Count Even and Odd Numbers
+
+# # Statement:
+# # Ask the user for a number n.
+
+# # Using a for loop from 1 to n:
+
+# # Count how many numbers are even.
+# # Count how many numbers are odd.
+# # Display both counts.
+
+# # 1. Ask user for input and convert to integer
+# n = int(input("Enter a number (n): "))
+
+# # 2. Initialize two counter variables outside the loop
+# even_count = 0
+# odd_count = 0
+
+# # 3. Loop from 1 to n (inclusive)
+# for num in range(1, n + 1):
+#     if num % 2 == 0:
+#         even_count += 1  # Increment even counter
+#     else:
+#         odd_count += 1   # Increment odd counter
+
+# # 4. Display the results
+# print(f"\nResults from 1 to {n}:")
+# print(f"Even numbers count: {even_count}")
+# print(f"Odd numbers count:  {odd_count}")
