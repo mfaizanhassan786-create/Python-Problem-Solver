@@ -187,3 +187,59 @@ for Loop — 5 Problems
 
 #     # 5. Display the result
 #     print(f"The factorial of {n} ({n}!) is: {factorial}")
+
+
+# Problem 10 — Number Analyzer
+
+# This is your hardest for-loop problem so far.
+
+# Statement:
+
+# Ask the user for a number n.
+
+# Using a for loop from 1 to n, calculate:
+
+# Sum of all numbers
+# Sum of all even numbers
+# Sum of all odd numbers
+# Count of even numbers
+# Count of odd numbers
+# Square of every number
+
+
+# 1. Get input from the user
+n = int(input("Enter a positive integer (n): "))
+
+# 2. Initialize all 5 accumulators BEFORE the loop
+total_sum = 0
+even_sum = 0
+odd_sum = 0
+even_count = 0
+odd_count = 0
+
+print(f"\n--- Squares of numbers from 1 to {n} ---")
+
+# 3. Single-pass loop from 1 to n
+for num in range(1, n + 1):
+    # Requirement 6: Print square of every number on the fly
+    square = num ** 2
+    print(f"Number: {num} | Square: {square}")
+    
+    # Requirement 1: Accumulate total sum
+    total_sum += num
+    
+    # Requirements 2-5: Branch for Even vs. Odd
+    if num % 2 == 0:
+        even_sum += num      # Requirement 2
+        even_count += 1      # Requirement 4
+    else:
+        odd_sum += num       # Requirement 3
+        odd_count += 1       # Requirement 5
+
+# 4. Output the aggregated results
+print("\n--- Final Analysis ---")
+print(f"Sum of all numbers : {total_sum}")
+print(f"Sum of even numbers: {even_sum}")
+print(f"Sum of odd numbers : {odd_sum}")
+print(f"Count of evens     : {even_count}")
+print(f"Count of odds      : {odd_count}")
