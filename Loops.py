@@ -141,3 +141,25 @@ for Loop — 5 Problems
 # print(f"\nResults from 1 to {n}:")
 # print(f"Even numbers count: {even_count}")
 # print(f"Odd numbers count:  {odd_count}")
+
+# Problem 8 — Find the Largest Number
+
+# Statement:
+# Ask the user to enter 5 numbers, one at a time.
+
+# Use a for loop to determine the largest number without using Python's built-in max() function.
+
+# 1. Initialize the record holder to negative infinity
+# float('-inf') is smaller than any number the user could possibly enter
+largest = float('-inf')
+
+# 2. Loop 5 times to collect inputs
+for i in range(1, 6):
+    num = float(input(f"Enter number {i}: "))
+    
+    # 3. Check if the current number beats the record holder
+    if num > largest:
+        largest = num
+
+# 4. Print the final winner
+print(f"\nThe largest number is: {largest}")
