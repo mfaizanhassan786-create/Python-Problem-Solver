@@ -93,8 +93,19 @@ for Loop — 5 Problems
 # print(f"Total Marks: {total_marks} / {max_marks}")
 # print(f"Percentage:  {percentage:.2f}%")
 
-# Problem 6 — Multiples of a Number
 
-# Statement:
-# Ask the user for a number n. Using a for loop, print the first 10 multiples of that number.
 
+# # Problem 6 — Multiples of a Number
+
+# # Statement:
+# # Ask the user for a number n. Using a for loop, print the first 10 multiples of that number.
+
+# # 1. Ask the user for a number and convert it to an integer
+# n = int(input("Enter a number: "))
+
+# print(f"\nThe first 10 multiples of {n} are:")
+
+# # 2. Loop from 1 through 10
+# for i in range(1, 11):
+#     multiple = n * i
+#     print(f"Multiple {i}: {multiple}")
