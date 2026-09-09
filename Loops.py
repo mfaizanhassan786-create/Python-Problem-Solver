@@ -63,32 +63,38 @@ for Loop — 5 Problems
 
 
 
-# Problem 5 — Student Marks Analyzer
+# # Problem 5 — Student Marks Analyzer
+
+# # Statement:
+# # Write a program that asks the user to enter marks for 5 subjects, one at a time.
+
+# # Your program should:
+
+# # Use a for loop to collect the 5 marks.
+# # Calculate the total marks.
+# # Calculate the percentage.
+# # Display the total and percentage.
+
+# # 1. Initialize the accumulator variable before the loop starts
+# total_marks = 0
+# total_subjects = 5
+
+# # 2. Loop 5 times (range(1, 6) gives us sequence: 1, 2, 3, 4, 5)
+# for subject_num in range(1, total_subjects + 1):
+#     mark = float(input(f"Enter marks for subject {subject_num}: "))
+#     total_marks += mark  # Short for: total_marks = total_marks + mark
+
+# # 3. Calculate percentage (assuming each subject is out of 100)
+# max_marks = total_subjects * 100
+# percentage = (total_marks / max_marks) * 100
+
+# # 4. Display the results
+# print("\n--- Summary ---")
+# print(f"Total Marks: {total_marks} / {max_marks}")
+# print(f"Percentage:  {percentage:.2f}%")
+
+# Problem 6 — Multiples of a Number
 
 # Statement:
-# Write a program that asks the user to enter marks for 5 subjects, one at a time.
+# Ask the user for a number n. Using a for loop, print the first 10 multiples of that number.
 
-# Your program should:
-
-# Use a for loop to collect the 5 marks.
-# Calculate the total marks.
-# Calculate the percentage.
-# Display the total and percentage.
-
-# 1. Initialize the accumulator variable before the loop starts
-total_marks = 0
-total_subjects = 5
-
-# 2. Loop 5 times (range(1, 6) gives us sequence: 1, 2, 3, 4, 5)
-for subject_num in range(1, total_subjects + 1):
-    mark = float(input(f"Enter marks for subject {subject_num}: "))
-    total_marks += mark  # Short for: total_marks = total_marks + mark
-
-# 3. Calculate percentage (assuming each subject is out of 100)
-max_marks = total_subjects * 100
-percentage = (total_marks / max_marks) * 100
-
-# 4. Display the results
-print("\n--- Summary ---")
-print(f"Total Marks: {total_marks} / {max_marks}")
-print(f"Percentage:  {percentage:.2f}%")
