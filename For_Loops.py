@@ -243,3 +243,43 @@ for Loop — 5 Problems
 # print(f"Sum of odd numbers : {odd_sum}")
 # print(f"Count of evens     : {even_count}")
 # print(f"Count of odds      : {odd_count}")
+
+"""
+
+Nested Loop:
+
+"""
+
+# # Problem 1 — Rectangle Pattern
+
+# # Statement:
+# # Use nested for loops to print 4 rows, with 5 stars in each row.
+
+# # Outer loop: Controls the number of ROWS (4 rows)
+# for row in range(4):
+#     
+#     # Inner loop: Controls the number of STARS per row (5 columns)
+#     for col in range(5):
+#         print("*", end="")  # Keeps printing stars on the SAME line
+#         
+#     print()  # Moves to a NEW line after completing a full row of 5 stars
+
+
+# Problem 2 — Number Pattern
+
+# Statement:
+# Use nested for loops to print this pattern:
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+
+# Outer loop: Controls the number of ROWS (5 rows, from 1 to 5)
+for row in range(1, 6):
+    
+    # Inner loop: Controls the NUMBERS printed in each row (from 1 to current row)
+    for col in range(1, row + 1):
+        print(col, end=" ")  # Prints numbers in the same line with space
+        
+    print()  # Moves to a new line after each row
