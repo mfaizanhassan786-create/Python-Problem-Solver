@@ -142,24 +142,48 @@ for Loop — 5 Problems
 # print(f"Even numbers count: {even_count}")
 # print(f"Odd numbers count:  {odd_count}")
 
-# Problem 8 — Find the Largest Number
+# # Problem 8 — Find the Largest Number
 
-# Statement:
-# Ask the user to enter 5 numbers, one at a time.
+# # Statement:
+# # Ask the user to enter 5 numbers, one at a time.
 
-# Use a for loop to determine the largest number without using Python's built-in max() function.
+# # Use a for loop to determine the largest number without using Python's built-in max() function.
 
-# 1. Initialize the record holder to negative infinity
-# float('-inf') is smaller than any number the user could possibly enter
-largest = float('-inf')
+# # 1. Initialize the record holder to negative infinity
+# # float('-inf') is smaller than any number the user could possibly enter
+# largest = float('-inf')
 
-# 2. Loop 5 times to collect inputs
-for i in range(1, 6):
-    num = float(input(f"Enter number {i}: "))
+# # 2. Loop 5 times to collect inputs
+# for i in range(1, 6):
+#     num = float(input(f"Enter number {i}: "))
     
-    # 3. Check if the current number beats the record holder
-    if num > largest:
-        largest = num
+#     # 3. Check if the current number beats the record holder
+#     if num > largest:
+#         largest = num
 
-# 4. Print the final winner
-print(f"\nThe largest number is: {largest}")
+# # 4. Print the final winner
+# print(f"\nThe largest number is: {largest}")
+
+# # Problem 9 — Factorial
+
+# # Statement:
+# # Ask the user for a positive integer n.
+
+# # Use a for loop to calculate its factorial.
+
+# # 1. Ask the user for a positive integer
+# n = int(input("Enter a positive integer: "))
+
+# # 2. Handle invalid inputs (negative numbers do not have real factorials)
+# if n < 0:
+#     print("Factorial is not defined for negative numbers.")
+# else:
+#     # 3. Initialize the multiplicative accumulator to 1
+#     factorial = 1
+
+#     # 4. Multiply every number from 1 to n into the accumulator
+#     for i in range(1, n + 1):
+#         factorial *= i  # Equivalent to: factorial = factorial * i
+
+#     # 5. Display the result
+#     print(f"The factorial of {n} ({n}!) is: {factorial}")
