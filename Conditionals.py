@@ -322,74 +322,135 @@
 #     print("Invalid option!")
 
 
-# Problem 13 — University Admission System
+
+
+# # Problem 13 — University Admission System
+# # Statement:
+
+# # Create a program that takes:
+
+# # Student name
+# # Percentage
+# # Entry test score
+
+# # Determine the student's admission status.
+
+# # Rules:
+
+# # First check the percentage:
+
+# # 90 or above
+
+# # Excellent Academic Record
+
+# # 80–89
+
+# # Very Good Academic Record
+
+# # 70–79
+
+# # Good Academic Record
+
+# # Below 70
+
+# # Academic Record Below Requirement
+
+# # But there's an additional admission rule:
+
+# # A student can be eligible for admission only if percentage ≥ 70.
+
+# # If percentage is 70 or above, use a nested if to check the entry test:
+
+# # Entry test ≥ 60 → Admission Eligible
+# # Entry test < 60 → Entry Test Failed
+
+# # If percentage is below 70:
+
+# # Admission Not Eligible
+
+# # 1. Take Inputs
+# name = input("Enter student name: ")
+# percentage = float(input("Enter percentage: "))
+# entry_test = float(input("Enter entry test score: "))
+
+# print(f"\n--- Admission Profile for {name} ---")
+
+# # 2. Check Academic Record (First set of rules)
+# if percentage >= 90:
+#     print("Record: Excellent Academic Record")
+# elif percentage >= 80:
+#     print("Record: Very Good Academic Record")
+# elif percentage >= 70:
+#     print("Record: Good Academic Record")
+# else:
+#     print("Record: Academic Record Below Requirement")
+
+# # 3. Check Admission Status (Using NESTED IF)
+# if percentage >= 70:
+#     # We are inside the first IF block now (Notice the indentation!)
+#     if entry_test >= 60:
+#         print("Status: Admission Eligible")
+#     else:
+#         print("Status: Entry Test Failed")
+# else:
+#     # This lines up with the main IF (percentage >= 70)
+#     print("Status: Admission Not Eligible")
+
+
+# Problem 14 — Bank Loan Eligibility System
+
+# This is your hardest challenge.
+
 # Statement:
 
-# Create a program that takes:
+# Create a loan eligibility program that asks the user for:
 
-# Student name
-# Percentage
-# Entry test score
+# Name
+# Age
+# Monthly salary
+# Credit score
+# Existing loan (yes or no)
 
-# Determine the student's admission status.
+# Use the following rules.
 
-# Rules:
+# Step 1 — Age
 
-# First check the percentage:
+# If age is:
 
-# 90 or above
+# Below 18 → Not eligible
+# 18–25 → Young applicant
+# 26–50 → Standard applicant
+# Above 50 → Senior applicant
+# Step 2 — Salary
 
-# Excellent Academic Record
+# If the applicant is at least 18, check salary using a nested if:
 
-# 80–89
+# Salary < 30,000 → Not eligible
+# Salary 30,000–59,999 → Basic category
+# Salary 60,000+ → Premium category
+# Step 3 — Credit Score
 
-# Very Good Academic Record
+# For applicants who passed the salary requirement:
 
-# 70–79
+# 750+ → Excellent credit
+# 650–749 → Good credit
+# 550–649 → Average credit
+# Below 550 → Poor credit
+# Step 4 — Existing Loan
 
-# Good Academic Record
+# If the applicant already has a loan:
 
-# Below 70
+# Existing loan detected.
 
-# Academic Record Below Requirement
+# Otherwise:
 
-# But there's an additional admission rule:
+# No existing loan.
 
-# A student can be eligible for admission only if percentage ≥ 70.
+# Finally, determine eligibility:
 
-# If percentage is 70 or above, use a nested if to check the entry test:
+# A person is eligible only when:
 
-# Entry test ≥ 60 → Admission Eligible
-# Entry test < 60 → Entry Test Failed
-
-# If percentage is below 70:
-
-# Admission Not Eligible
-
-# 1. Take Inputs
-name = input("Enter student name: ")
-percentage = float(input("Enter percentage: "))
-entry_test = float(input("Enter entry test score: "))
-
-print(f"\n--- Admission Profile for {name} ---")
-
-# 2. Check Academic Record (First set of rules)
-if percentage >= 90:
-    print("Record: Excellent Academic Record")
-elif percentage >= 80:
-    print("Record: Very Good Academic Record")
-elif percentage >= 70:
-    print("Record: Good Academic Record")
-else:
-    print("Record: Academic Record Below Requirement")
-
-# 3. Check Admission Status (Using NESTED IF)
-if percentage >= 70:
-    # We are inside the first IF block now (Notice the indentation!)
-    if entry_test >= 60:
-        print("Status: Admission Eligible")
-    else:
-        print("Status: Entry Test Failed")
-else:
-    # This lines up with the main IF (percentage >= 70)
-    print("Status: Admission Not Eligible")
+# Age is 18+
+# Salary is at least 30,000
+# Credit score is at least 650
+# No existing loan
