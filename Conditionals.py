@@ -112,57 +112,112 @@
 
 
 
-# Problem 9 — Student Scholarship System
+# # Problem 9 — Student Scholarship System
 
+# # Statement:
+# # Write a program that takes a student's:
+
+# # Name
+# # Percentage
+# # Family monthly income
+
+# # Then determine whether the student qualifies for a scholarship.
+
+# # Rules:
+
+# # A student qualifies if:
+
+# # Condition 1:
+
+# # Percentage is 80 or higher
+# # AND family income is 100,000 or less
+
+# # OR
+
+# # Condition 2:
+
+# # Percentage is 90 or higher
+# # AND family income is 150,000 or less
+
+# # If qualified:
+
+# # Congratulations Faizan!
+# # You are eligible for the scholarship.
+
+# # Otherwise:
+
+# # Sorry Faizan.
+# # You are not eligible for the scholarship.
+
+# # 1. Inputs
+# name = input("Enter student name: ")
+# percentage = float(input("Enter percentage: "))
+# income = float(input("Enter family monthly income: "))
+
+# # 2. Check Conditions
+# # Group each condition set in parentheses for clean logic evaluation
+# condition_1 = (percentage >= 80) and (income <= 100000)
+# condition_2 = (percentage >= 90) and (income <= 150000)
+
+# # 3. Decision
+# if condition_1 or condition_2:
+#     print(f"\nCongratulations {name}!")
+#     print("You are eligible for the scholarship.")
+# else:
+#     print(f"\nSorry {name}.")
+#     print("You are not eligible for the scholarship.")
+
+
+# # Problem 10  — Grade Calculator
+# # Statement:
+
+# # Write a program that takes a student's percentage and displays their grade.
+
+# # Use these rules:
+
+# # Percentage	Grade
+# # 90–100	A+
+# # 80–89	A
+# # 70–79	B
+# # 60–69	C
+# # 50–59	D
+# # Below 50	F
+
+
+# # 1. Input
+# percentage = float(input("Enter percentage: "))
+
+# # 2. Decision Logic
+
+# if percentage >= 90: # Covers 90 to 100
+#     grade = "A+"
+# elif percentage >= 80:
+#     grade = "A"
+# elif percentage >= 70:
+#     grade = "B"
+# elif percentage >= 60:
+#     grade = "C"
+# elif percentage >= 50:
+#     grade = "D"
+# else:
+#     grade = "F"
+
+# # 3. Output
+# print(f"Your Grade is: {grade}")
+
+
+
+# Problem 11 — Electricity Bill
 # Statement:
-# Write a program that takes a student's:
 
-# Name
-# Percentage
-# Family monthly income
+# Write a program that takes the number of electricity units consumed and determines the price category.
 
-# Then determine whether the student qualifies for a scholarship.
+# Use these rules:
 
-# Rules:
+# Units	Category
+# 0–100	Low Usage
+# 101–300	Normal Usage
+# 301–500	High Usage
+# Above 500	Very High Usage
 
-# A student qualifies if:
-
-# Condition 1:
-
-# Percentage is 80 or higher
-# AND family income is 100,000 or less
-
-# OR
-
-# Condition 2:
-
-# Percentage is 90 or higher
-# AND family income is 150,000 or less
-
-# If qualified:
-
-# Congratulations Faizan!
-# You are eligible for the scholarship.
-
-# Otherwise:
-
-# Sorry Faizan.
-# You are not eligible for the scholarship.
-
-# 1. Inputs
-name = input("Enter student name: ")
-percentage = float(input("Enter percentage: "))
-income = float(input("Enter family monthly income: "))
-
-# 2. Check Conditions
-# Group each condition set in parentheses for clean logic evaluation
-condition_1 = (percentage >= 80) and (income <= 100000)
-condition_2 = (percentage >= 90) and (income <= 150000)
-
-# 3. Decision
-if condition_1 or condition_2:
-    print(f"\nCongratulations {name}!")
-    print("You are eligible for the scholarship.")
-else:
-    print(f"\nSorry {name}.")
-    print("You are not eligible for the scholarship.")
+# Print the category.
