@@ -207,17 +207,36 @@
 
 
 
-# Problem 11 — Electricity Bill
-# Statement:
+# # Problem 11 — Electricity Bill
+# # Statement:
 
-# Write a program that takes the number of electricity units consumed and determines the price category.
+# # Write a program that takes the number of electricity units consumed and determines the price category.
 
-# Use these rules:
+# # Use these rules:
 
-# Units	Category
-# 0–100	Low Usage
-# 101–300	Normal Usage
-# 301–500	High Usage
-# Above 500	Very High Usage
+# # Units	Category
+# # 0–100	Low Usage
+# # 101–300	Normal Usage
+# # 301–500	High Usage
+# # Above 500	Very High Usage
 
-# Print the category.
+# # Print the category.
+
+
+
+# # 1. Input
+# units = float(input("Enter units consumed: "))
+
+# # 2. Decision Logic
+
+# if units <= 100:  # 0 to 100
+#     category = "Low Usage"
+# elif units <= 300:  # 101 to 300
+#     category = "Normal Usage"
+# elif units <= 500:  # 301 to 500
+#     category = "High Usage"
+# else:  # Above 500
+#     category = "Very High Usage"
+
+# # 3. Output
+# print(f"Usage Category: {category}")
