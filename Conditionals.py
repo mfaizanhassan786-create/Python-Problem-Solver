@@ -240,3 +240,83 @@
 
 # # 3. Output
 # print(f"Usage Category: {category}")
+
+
+
+
+# Problem 12 — ATM Transaction System
+# Statement:
+
+# Create an ATM program with:
+
+# balance = 50000
+
+# Ask the user to select:
+
+# 1. Check Balance
+# 2. Withdraw
+# 3. Deposit
+
+# Use if-elif-else to handle the selected option.
+
+# Requirements:
+
+# Option 1:
+
+# Display:
+
+# Your balance is: 50000
+
+# Option 2:
+
+# Ask for withdrawal amount.
+
+# If the amount is valid and there is sufficient balance, display the remaining balance.
+
+# Otherwise display:
+
+# Insufficient balance!
+
+# Option 3:
+
+# Ask for deposit amount and display the updated balance.
+
+# If the user enters anything other than 1, 2, or 3:
+
+# Invalid option!
+
+# Concept: if-elif-else + nested if
+
+# Initial state
+balance = 50000
+
+# Display menu options
+print("--- ATM MENU ---")
+print("1. Check Balance")
+print("2. Withdraw")
+print("3. Deposit")
+
+# Get user choice
+option = input("Select an option (1-3): ")
+
+# Main branching logic
+if option == "1":
+    print(f"Your balance is: {balance}")
+
+elif option == "2":
+    withdraw_amount = float(input("Enter withdrawal amount: "))
+    
+    # NESTED IF: Checking if the withdrawal amount is valid against balance
+    if withdraw_amount <= balance:
+        balance = balance - withdraw_amount
+        print(f"Withdrawal successful!\nRemaining balance is: {balance}")
+    else:
+        print("Insufficient balance!")
+
+elif option == "3":
+    deposit_amount = float(input("Enter deposit amount: "))
+    balance = balance + deposit_amount
+    print(f"Deposit successful!\nUpdated balance is: {balance}")
+
+else:
+    print("Invalid option!")
