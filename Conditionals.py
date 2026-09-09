@@ -454,3 +454,122 @@
 # Salary is at least 30,000
 # Credit score is at least 650
 # No existing loan
+
+
+
+#       BANK LOAN ELIGIBILITY SYSTEM
+
+# 1. Collect Inputs
+name = input("Enter name: ")
+age = int(input("Enter age: "))
+salary = float(input("Enter monthly salary: "))
+credit_score = int(input("Enter credit score: "))
+existing_loan = input("Existing loan (yes/no): ").strip().lower()
+
+
+# 2. Setup Variables
+applicant_category = ""
+salary_category = ""
+credit_rating = ""
+loan_status_text = ""
+is_eligible = False
+
+
+# 3. CHECK AGE
+
+
+if age < 18:
+    applicant_category = "Not eligible"
+
+elif 18 <= age <= 25:
+    applicant_category = "Young applicant"
+
+elif 26 <= age <= 50:
+    applicant_category = "Standard applicant"
+
+else:
+    applicant_category = "Senior applicant"
+
+
+# 4. CHECK SALARY
+
+
+if age >= 18:
+
+    if salary < 30000:
+        salary_category = "Not eligible"
+
+    elif salary < 60000:
+        salary_category = "Basic category"
+
+    else:
+        salary_category = "Premium category"
+
+
+  
+    # 5. CHECK CREDIT SCORE
+
+
+    if salary >= 30000:
+
+        if credit_score >= 750:
+            credit_rating = "Excellent credit"
+
+        elif credit_score >= 650:
+            credit_rating = "Good credit"
+
+        elif credit_score >= 550:
+            credit_rating = "Average credit"
+
+        else:
+            credit_rating = "Poor credit"
+
+        
+
+        # 6. CHECK EXISTING LOAN
+       
+
+        if existing_loan == "yes":
+            loan_status_text = "Existing loan detected."
+
+        else:
+            loan_status_text = "No existing loan."
+
+
+        
+        # 7. FINAL ELIGIBILITY
+       
+
+        if credit_score >= 650 and existing_loan == "no":
+            is_eligible = True
+
+
+
+# 8. FINAL REPORT
+
+
+print("\n" + "=" * 45)
+print("        BANK LOAN ELIGIBILITY REPORT")
+print("=" * 45)
+
+print(f"Name: {name}")
+print(f"Age: {age}")
+
+print(f"\nApplicant Category: {applicant_category}")
+print(f"Salary Category: {salary_category}")
+
+if credit_rating:
+    print(f"Credit Rating: {credit_rating}")
+
+if loan_status_text:
+    print(f"Loan Information: {loan_status_text}")
+
+
+print("\n" + "-" * 45)
+
+if is_eligible:
+    print("Loan Status: ELIGIBLE")
+else:
+    print("Loan Status: NOT ELIGIBLE")
+
+print("=" * 45)
