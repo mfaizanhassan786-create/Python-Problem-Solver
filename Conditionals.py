@@ -397,179 +397,179 @@
 #     print("Status: Admission Not Eligible")
 
 
-# Problem 14 — Bank Loan Eligibility System
+# # Problem 14 — Bank Loan Eligibility System
 
-# This is your hardest challenge.
+# # This is your hardest challenge.
 
-# Statement:
+# # Statement:
 
-# Create a loan eligibility program that asks the user for:
+# # Create a loan eligibility program that asks the user for:
 
-# Name
-# Age
-# Monthly salary
-# Credit score
-# Existing loan (yes or no)
+# # Name
+# # Age
+# # Monthly salary
+# # Credit score
+# # Existing loan (yes or no)
 
-# Use the following rules.
+# # Use the following rules.
 
-# Step 1 — Age
+# # Step 1 — Age
 
-# If age is:
+# # If age is:
 
-# Below 18 → Not eligible
-# 18–25 → Young applicant
-# 26–50 → Standard applicant
-# Above 50 → Senior applicant
-# Step 2 — Salary
+# # Below 18 → Not eligible
+# # 18–25 → Young applicant
+# # 26–50 → Standard applicant
+# # Above 50 → Senior applicant
+# # Step 2 — Salary
 
-# If the applicant is at least 18, check salary using a nested if:
+# # If the applicant is at least 18, check salary using a nested if:
 
-# Salary < 30,000 → Not eligible
-# Salary 30,000–59,999 → Basic category
-# Salary 60,000+ → Premium category
-# Step 3 — Credit Score
+# # Salary < 30,000 → Not eligible
+# # Salary 30,000–59,999 → Basic category
+# # Salary 60,000+ → Premium category
+# # Step 3 — Credit Score
 
-# For applicants who passed the salary requirement:
+# # For applicants who passed the salary requirement:
 
-# 750+ → Excellent credit
-# 650–749 → Good credit
-# 550–649 → Average credit
-# Below 550 → Poor credit
-# Step 4 — Existing Loan
+# # 750+ → Excellent credit
+# # 650–749 → Good credit
+# # 550–649 → Average credit
+# # Below 550 → Poor credit
+# # Step 4 — Existing Loan
 
-# If the applicant already has a loan:
+# # If the applicant already has a loan:
 
-# Existing loan detected.
+# # Existing loan detected.
 
-# Otherwise:
+# # Otherwise:
 
-# No existing loan.
+# # No existing loan.
 
-# Finally, determine eligibility:
+# # Finally, determine eligibility:
 
-# A person is eligible only when:
+# # A person is eligible only when:
 
-# Age is 18+
-# Salary is at least 30,000
-# Credit score is at least 650
-# No existing loan
-
-
-
-#       BANK LOAN ELIGIBILITY SYSTEM
-
-# 1. Collect Inputs
-name = input("Enter name: ")
-age = int(input("Enter age: "))
-salary = float(input("Enter monthly salary: "))
-credit_score = int(input("Enter credit score: "))
-existing_loan = input("Existing loan (yes/no): ").strip().lower()
+# # Age is 18+
+# # Salary is at least 30,000
+# # Credit score is at least 650
+# # No existing loan
 
 
-# 2. Setup Variables
-applicant_category = ""
-salary_category = ""
-credit_rating = ""
-loan_status_text = ""
-is_eligible = False
+
+# #       BANK LOAN ELIGIBILITY SYSTEM
+
+# # 1. Collect Inputs
+# name = input("Enter name: ")
+# age = int(input("Enter age: "))
+# salary = float(input("Enter monthly salary: "))
+# credit_score = int(input("Enter credit score: "))
+# existing_loan = input("Existing loan (yes/no): ").strip().lower()
 
 
-# 3. CHECK AGE
+# # 2. Setup Variables
+# applicant_category = ""
+# salary_category = ""
+# credit_rating = ""
+# loan_status_text = ""
+# is_eligible = False
 
 
-if age < 18:
-    applicant_category = "Not eligible"
-
-elif 18 <= age <= 25:
-    applicant_category = "Young applicant"
-
-elif 26 <= age <= 50:
-    applicant_category = "Standard applicant"
-
-else:
-    applicant_category = "Senior applicant"
+# # 3. CHECK AGE
 
 
-# 4. CHECK SALARY
+# if age < 18:
+#     applicant_category = "Not eligible"
+
+# elif 18 <= age <= 25:
+#     applicant_category = "Young applicant"
+
+# elif 26 <= age <= 50:
+#     applicant_category = "Standard applicant"
+
+# else:
+#     applicant_category = "Senior applicant"
 
 
-if age >= 18:
+# # 4. CHECK SALARY
 
-    if salary < 30000:
-        salary_category = "Not eligible"
 
-    elif salary < 60000:
-        salary_category = "Basic category"
+# if age >= 18:
 
-    else:
-        salary_category = "Premium category"
+#     if salary < 30000:
+#         salary_category = "Not eligible"
+
+#     elif salary < 60000:
+#         salary_category = "Basic category"
+
+#     else:
+#         salary_category = "Premium category"
 
 
   
-    # 5. CHECK CREDIT SCORE
+#     # 5. CHECK CREDIT SCORE
 
 
-    if salary >= 30000:
+#     if salary >= 30000:
 
-        if credit_score >= 750:
-            credit_rating = "Excellent credit"
+#         if credit_score >= 750:
+#             credit_rating = "Excellent credit"
 
-        elif credit_score >= 650:
-            credit_rating = "Good credit"
+#         elif credit_score >= 650:
+#             credit_rating = "Good credit"
 
-        elif credit_score >= 550:
-            credit_rating = "Average credit"
+#         elif credit_score >= 550:
+#             credit_rating = "Average credit"
 
-        else:
-            credit_rating = "Poor credit"
-
-        
-
-        # 6. CHECK EXISTING LOAN
-       
-
-        if existing_loan == "yes":
-            loan_status_text = "Existing loan detected."
-
-        else:
-            loan_status_text = "No existing loan."
-
+#         else:
+#             credit_rating = "Poor credit"
 
         
-        # 7. FINAL ELIGIBILITY
+
+#         # 6. CHECK EXISTING LOAN
        
 
-        if credit_score >= 650 and existing_loan == "no":
-            is_eligible = True
+#         if existing_loan == "yes":
+#             loan_status_text = "Existing loan detected."
+
+#         else:
+#             loan_status_text = "No existing loan."
+
+
+        
+#         # 7. FINAL ELIGIBILITY
+       
+
+#         if credit_score >= 650 and existing_loan == "no":
+#             is_eligible = True
 
 
 
-# 8. FINAL REPORT
+# # 8. FINAL REPORT
 
 
-print("\n" + "=" * 45)
-print("        BANK LOAN ELIGIBILITY REPORT")
-print("=" * 45)
+# print("\n" + "=" * 45)
+# print("        BANK LOAN ELIGIBILITY REPORT")
+# print("=" * 45)
 
-print(f"Name: {name}")
-print(f"Age: {age}")
+# print(f"Name: {name}")
+# print(f"Age: {age}")
 
-print(f"\nApplicant Category: {applicant_category}")
-print(f"Salary Category: {salary_category}")
+# print(f"\nApplicant Category: {applicant_category}")
+# print(f"Salary Category: {salary_category}")
 
-if credit_rating:
-    print(f"Credit Rating: {credit_rating}")
+# if credit_rating:
+#     print(f"Credit Rating: {credit_rating}")
 
-if loan_status_text:
-    print(f"Loan Information: {loan_status_text}")
+# if loan_status_text:
+#     print(f"Loan Information: {loan_status_text}")
 
 
-print("\n" + "-" * 45)
+# print("\n" + "-" * 45)
 
-if is_eligible:
-    print("Loan Status: ELIGIBLE")
-else:
-    print("Loan Status: NOT ELIGIBLE")
+# if is_eligible:
+#     print("Loan Status: ELIGIBLE")
+# else:
+#     print("Loan Status: NOT ELIGIBLE")
 
-print("=" * 45)
+# print("=" * 45)
