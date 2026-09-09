@@ -320,3 +320,76 @@
 
 # else:
 #     print("Invalid option!")
+
+
+# Problem 13 — University Admission System
+# Statement:
+
+# Create a program that takes:
+
+# Student name
+# Percentage
+# Entry test score
+
+# Determine the student's admission status.
+
+# Rules:
+
+# First check the percentage:
+
+# 90 or above
+
+# Excellent Academic Record
+
+# 80–89
+
+# Very Good Academic Record
+
+# 70–79
+
+# Good Academic Record
+
+# Below 70
+
+# Academic Record Below Requirement
+
+# But there's an additional admission rule:
+
+# A student can be eligible for admission only if percentage ≥ 70.
+
+# If percentage is 70 or above, use a nested if to check the entry test:
+
+# Entry test ≥ 60 → Admission Eligible
+# Entry test < 60 → Entry Test Failed
+
+# If percentage is below 70:
+
+# Admission Not Eligible
+
+# 1. Take Inputs
+name = input("Enter student name: ")
+percentage = float(input("Enter percentage: "))
+entry_test = float(input("Enter entry test score: "))
+
+print(f"\n--- Admission Profile for {name} ---")
+
+# 2. Check Academic Record (First set of rules)
+if percentage >= 90:
+    print("Record: Excellent Academic Record")
+elif percentage >= 80:
+    print("Record: Very Good Academic Record")
+elif percentage >= 70:
+    print("Record: Good Academic Record")
+else:
+    print("Record: Academic Record Below Requirement")
+
+# 3. Check Admission Status (Using NESTED IF)
+if percentage >= 70:
+    # We are inside the first IF block now (Notice the indentation!)
+    if entry_test >= 60:
+        print("Status: Admission Eligible")
+    else:
+        print("Status: Entry Test Failed")
+else:
+    # This lines up with the main IF (percentage >= 70)
+    print("Status: Admission Not Eligible")
