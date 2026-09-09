@@ -265,21 +265,41 @@ Nested Loop:
 #     print()  # Moves to a NEW line after completing a full row of 5 stars
 
 
-# Problem 2 — Number Pattern
+# # Problem 2 — Number Pattern
 
-# Statement:
-# Use nested for loops to print this pattern:
-# 1
-# 1 2
-# 1 2 3
-# 1 2 3 4
-# 1 2 3 4 5
+# # Statement:
+# # Use nested for loops to print this pattern:
+# # 1
+# # 1 2
+# # 1 2 3
+# # 1 2 3 4
+# # 1 2 3 4 5
 
-# Outer loop: Controls the number of ROWS (5 rows, from 1 to 5)
-for row in range(1, 6):
+# # Outer loop: Controls the number of ROWS (5 rows, from 1 to 5)
+# for row in range(1, 6):
     
-    # Inner loop: Controls the NUMBERS printed in each row (from 1 to current row)
-    for col in range(1, row + 1):
-        print(col, end=" ")  # Prints numbers in the same line with space
+#     # Inner loop: Controls the NUMBERS printed in each row (from 1 to current row)
+#     for col in range(1, row + 1):
+#         print(col, end=" ")  # Prints numbers in the same line with space
         
-    print()  # Moves to a new line after each row
+#     print()  # Moves to a new line after each row
+
+
+
+# # Problem 3 — Multiplication Tables
+
+# # Statement:
+# # Use nested for loops to print multiplication tables from 1 to 5, with each table going from 1 to 10.
+
+# # Outer loop: Controls the table number (1 to 5)
+
+
+# for table in range(1, 6):
+#     print(f"--- MULTIPLICATION TABLE OF {table} ---")
+    
+#     # Inner loop: Controls the multiplier (1 to 10)
+#     for multiplier in range(1, 11):
+#         product = table * multiplier
+#         print(f"{table} x {multiplier} = {product}")
+        
+#     print()  # Adds an empty line between tables for clean output
