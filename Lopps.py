@@ -40,3 +40,37 @@ for Loop — 5 Problems
 # for i in range(0,num+1):
 #     sum += i
 # print(f"The sum of numbers from 1 to {num} is {sum}")
+
+
+# # Problem 4 — Even and Odd Numbers
+
+# # Statement:
+# # Ask the user for a number n.
+
+# # Use a for loop to go from 1 to n.
+
+
+# # For every number, determine whether it is even or odd and print the result.
+
+
+# num = int(input("Enter a number:"))
+
+# for i in range(1,num+1):
+#     if i % 2 == 0:
+#         print(f"{i} is even")
+#     else:
+#         print(f"{i} is odd")
+
+
+
+# Problem 5 — Student Marks Analyzer
+
+# Statement:
+# Write a program that asks the user to enter marks for 5 subjects, one at a time.
+
+# Your program should:
+
+# Use a for loop to collect the 5 marks.
+# Calculate the total marks.
+# Calculate the percentage.
+# Display the total and percentage.
