@@ -109,3 +109,60 @@
 #     print(f" Withdrawal successful! Remaining balance: ${balance:.2f}")
 # else:
 #     print(" Insufficient Balance!")
+
+
+
+# Problem 9 — Student Scholarship System
+
+# Statement:
+# Write a program that takes a student's:
+
+# Name
+# Percentage
+# Family monthly income
+
+# Then determine whether the student qualifies for a scholarship.
+
+# Rules:
+
+# A student qualifies if:
+
+# Condition 1:
+
+# Percentage is 80 or higher
+# AND family income is 100,000 or less
+
+# OR
+
+# Condition 2:
+
+# Percentage is 90 or higher
+# AND family income is 150,000 or less
+
+# If qualified:
+
+# Congratulations Faizan!
+# You are eligible for the scholarship.
+
+# Otherwise:
+
+# Sorry Faizan.
+# You are not eligible for the scholarship.
+
+# 1. Inputs
+name = input("Enter student name: ")
+percentage = float(input("Enter percentage: "))
+income = float(input("Enter family monthly income: "))
+
+# 2. Check Conditions
+# Group each condition set in parentheses for clean logic evaluation
+condition_1 = (percentage >= 80) and (income <= 100000)
+condition_2 = (percentage >= 90) and (income <= 150000)
+
+# 3. Decision
+if condition_1 or condition_2:
+    print(f"\nCongratulations {name}!")
+    print("You are eligible for the scholarship.")
+else:
+    print(f"\nSorry {name}.")
+    print("You are not eligible for the scholarship.")
