@@ -6,9 +6,18 @@ They will later become extremely important for FastAPI, AI/ML, data science, and
 """
 
 
-# Problem 1 — Simple Function
+# # Problem 1 — Simple Function
 
-def hello():
-    print("Hello World!")
+# def hello():
+#     print("Hello World!")
 
-hello()
+# hello()
+
+
+
+# # Problem 2 — Personal Greeting
+
+# def greet():
+#     print("Hello Ali")
+#     print("Welcome to Python Programming.")
+# greet()
