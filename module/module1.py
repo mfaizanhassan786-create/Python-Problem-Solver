@@ -16,3 +16,4 @@
 
 # import mymodule
 # print(mymodule.greet())
+#print(mymodule.person)
